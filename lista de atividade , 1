@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main(void) {
+  float metros;
+   
+  printf("Digite a quantidade em metros: ");
+  scanf("%f",&metros);
+  printf("metros:",metros);
+  printf("em decimetros é: %.1f",metros*10);
+  printf("\nem centimetros é: %.1f",metros*100);
+  printf("\nem milimetros é: %.1f",metros*1000);
+  return 0;
+}
