@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+int senha ;
+char letra;
+int main(){
+    system("color a");
+    int opcao;
+    printf("BEM VINDO!\nDIGITE UMA OPCAO!\
+          \n1- LOGAR \
+          \n2- CADASTRAR \
+          \n3- SAIR \
+          \n>>");
+    scanf("%d",&opcao);
+
+switch(opcao){
+  case 1:
+    printf("LOGIN\n");
+
+
+   char letrad;
+   int senhad;
+   printf("digite uma letra: ");
+   scanf("%s", &letrad);
+   printf("Digite uma senha: ");
+   scanf("%d", &senhad);
+
+   if(letra == letrad && senha == senhad){
+    printf("login valido");
+   }else{
+    printf("login invalido");
+   } break;
+   case 2:
+
+    printf("Cadastrando \n");
+  break;
+  case 3:
+    printf("saindo\n");
+  break;
+  default:
+    printf("digitou errado ");
+  break;
+
+
+}
+    return 0;
+}
