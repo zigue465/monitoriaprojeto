@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int a, b;
+    printf("diga o primeiro valor: ");
+    scanf("%d", &a);
+    printf("agora, digite o segundo valor: ");
+    scanf("%d",  &b);
+
+    if (a>b){
+        printf("desses dois, o maior numero eh: %d", a);
+    } else if (a == b) {
+       printf("ambos os valores sao iguais, sendo eles: %d", a);
+    } else {
+       printf("desses dois, o maior numero eh: %d", b);
+    }
+
+
+
+    return 0;
+}
+
