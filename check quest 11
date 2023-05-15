@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+  int a1, a2, a3;
+
+  printf("Digite a medida do primeiro angulo: ");
+  scanf("%d", &a1);
+
+  printf("Digite a medida do segundo angulo: ");
+  scanf("%d", &a2);
+
+  printf("Digite a medida do terceiro angulo: ");
+  scanf("%d", &a3);
+
+  if(a1 == 90 || a2 == 90 || a3 == 90){
+    printf("\nTriangulo retangulo");
+
+  }else if(a1 > 90 || a2 > 90 || a3 > 90){
+    printf("\nTriangulo obtusangulo");
+
+  }else{
+    printf("\nTrinagulo actuangulo");
+  }
+
+	return 0;
+}
