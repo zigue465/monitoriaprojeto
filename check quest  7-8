@@ -1,0 +1,35 @@
+  #include <stdio.h>
+#include <math.h>
+
+int main() {
+    int numLados;
+    double medidaLado, area;
+
+    printf("Digite o número de lados do polígono regular: ");
+    scanf("%d", &numLados);
+
+    printf("Digite a medida do lado (em cm): ");
+    scanf("%lf", &medidaLado);
+
+    if (numLados == 3) {
+        // Triângulo
+        area = (sqrt(3) / 4) * medidaLado * medidaLado;
+        printf("TRIÂNGULO\n");
+        printf("Área: %.2lf cm²\n", area);
+    } else if (numLados == 4) {
+        // Quadrado
+        area = medidaLado * medidaLado;
+        printf("QUADRADO\n");
+        printf("Área: %.2lf cm²\n", area);
+    } else if (numLados == 5) {
+        // Pentágono
+        area = (5.0 / 4.0) * medidaLado * medidaLado * (1.0 / tan(M_PI / 5.0));
+        printf("PENTÁGONO\n");
+        printf("Área: %.2lf cm²\n", area);
+    } else {
+        printf("Polígono não suportado!\n");
+    }
+
+    return 0;
+}
+  
